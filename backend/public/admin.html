@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#090909">
+  <title>GFAMOUS Admin</title>
+  <link rel="stylesheet" href="/admin.css">
+  <script src="/admin.js" defer></script>
+</head>
+<body>
+  <header class="top"><a class="brand" href="/creator">GFAMOUS <span>ENTERTAINMENT</span></a><span class="tag">ADMIN CONSOLE</span></header>
+  <main class="wrap">
+    <section class="intro"><p class="eyebrow">CONTENT MODERATION</p><h1>Admin Dashboard</h1><p>Review creator submissions, verify distribution rights and decide what may be published.</p></section>
+    <section id="loginPanel" class="panel">
+      <h2>Admin sign in</h2>
+      <p class="muted">Only the account configured by the service owner can access moderation tools.</p>
+      <form id="loginForm">
+        <label>Username<input name="username" autocomplete="username" required maxlength="100"></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="primary" type="submit">Sign in securely</button>
+      </form>
+    </section>
+    <section id="dashboard" hidden>
+      <div class="toolbar"><div><h2>Pending submissions</h2><p class="muted">Nothing is published until an admin approves it.</p></div><div class="actions"><button id="refresh" class="secondary">Refresh</button><button id="logout" class="secondary">Sign out</button></div></div>
+      <p id="status" class="notice" role="status"></p>
+      <div id="submissions" class="cards"></div>
+    </section>
+    <p class="foot">GFAMOUS Entertainment · Private moderation interface · All decisions are saved on the server.</p>
+  </main>
+</body>
+</html>
