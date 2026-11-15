@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>GFAMOUS Creator Studio</title>
+  <link rel="stylesheet" href="/admin.css">
+  <script src="/creator.js" defer></script>
+</head>
+<body>
+  <header class="top"><a class="brand" href="/">GFAMOUS <span>ENTERTAINMENT</span></a><a class="secondary" href="/admin">Admin</a></header>
+  <main class="wrap">
+    <section class="intro"><p class="eyebrow">CREATOR STUDIO</p><h1>Submit your content</h1><p>Send a movie, series or music submission to GFAMOUS for review. Submission does not mean automatic publication or payment.</p></section>
+    <section class="panel" style="max-width:680px">
+      <form id="creatorForm">
+        <label>Content type<select name="type" required><option value="">Choose type</option><option value="movie">Movie</option><option value="series">TV Series</option><option value="music">Music</option></select></label>
+        <label>Title<input name="title" required maxlength="100"></label>
+        <label>Creator / rights holder name<input name="creatorName" required maxlength="100"></label>
+        <label>Description<textarea name="description" required minlength="10" maxlength="1500" rows="4"></textarea></label>
+        <label>Media link (optional, HTTPS only)<input name="mediaUrl" type="url" placeholder="https://..." maxlength="1000"></label>
+        <label>Explain your distribution rights<textarea name="rightsDetails" required minlength="10" maxlength="1000" rows="4" placeholder="Explain whether you own the content or have written permission to distribute it."></textarea></label>
+        <label class="check"><input name="rightsConfirmed" type="checkbox" required> I confirm that I own this content or have permission to submit it for distribution.</label>
+        <button class="primary" type="submit">Send for review</button>
+      </form>
+      <p id="result" class="notice" role="status"></p>
+    </section>
+    <p class="foot">Do not submit copyrighted content without permission. GFAMOUS may reject submissions that lack sufficient rights evidence.</p>
+  </main>
+</body>
+</html>
