@@ -26,6 +26,12 @@ if (process.env.ADMIN_PASSWORD.length < 12) {
 const app = express();
 const isProduction = process.env.NODE_ENV === "production";
 const frontendOrigin = process.env.FRONTEND_ORIGIN.replace(/\/$/, "");
+const allowedOrigins = new Set([
+  frontendOrigin,
+  "https://gfamous133-hub.github.io",
+  "https://gfamous-entertainment-api.onrender.com",
+  process.env.RENDER_EXTERNAL_URL ? process.env.RENDER_EXTERNAL_URL.replace(/\/$/, "") : ""
+].filter(Boolean));
 const port = Number(process.env.PORT || 10000);
 
 app.disable("x-powered-by");
@@ -33,7 +39,8 @@ app.set("trust proxy", 1);
 app.use(helmet());
 app.use(cors({
   origin(origin, callback) {
-    if (!origin || origin === frontendOrigin) return callback(null, true);
+    // Allow non-browser/server requests and the exact GFAMOUS site/API origins only.
+    if (!origin || allowedOrigins.has(origin)) return callback(null, true);
     return callback(new Error("Origin not allowed by CORS."));
   },
   methods: ["GET", "POST", "PATCH", "OPTIONS"],
