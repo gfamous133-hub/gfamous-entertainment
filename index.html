@@ -1,44 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#090909"><meta name="description" content="GFAMOUS Entertainment — discover movies, TV series and music.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="GFAMOUS Entertainment — discover movies, TV series and music.">
 <title>GFAMOUS Entertainment</title>
 <style>
-:root{--bg:#090909;--panel:#151515;--panel2:#202020;--gold:#e8b93f;--muted:#aaa;--white:#f7f5ef}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer}.top{position:sticky;top:0;z-index:5;background:#090909ed;backdrop-filter:blur(12px);border-bottom:1px solid #292929;padding:15px max(5%,calc((100% - 1200px)/2));display:flex;align-items:center;gap:22px;flex-wrap:wrap}.brand{font-size:22px;font-weight:900;letter-spacing:1px;color:var(--gold);white-space:nowrap}.brand span{color:#fff}.nav{display:flex;gap:8px;flex:1;flex-wrap:wrap}.nav button,.nav .dashboard-link,.lang,.ghost{background:transparent;color:#ddd;border:0;padding:9px 12px;border-radius:8px;text-decoration:none;font:inherit}.nav button.active,.nav button:hover,.lang:hover,.ghost:hover{background:#292929;color:var(--gold)}.tools{display:flex;gap:8px;align-items:center}.search{width:min(220px,48vw);background:#1b1b1b;border:1px solid #333;border-radius:20px;color:white;padding:10px 14px}.hero{max-width:1200px;margin:28px auto 18px;padding:55px 5%;border:1px solid #3c321c;border-radius:20px;background:radial-gradient(ellipse at 85% 15%,#58451b 0,transparent 36%),linear-gradient(110deg,#211b10,#101010 65%);min-height:280px;display:flex;align-items:center}.hero h1{font-size:clamp(32px,6vw,58px);line-height:1.02;margin:0 0 14px;max-width:650px}.gold{color:var(--gold)}.hero p{color:#c9c2b3;max-width:570px;line-height:1.6}.cta{background:var(--gold);color:#17130a;border:0;border-radius:8px;padding:12px 18px;font-weight:800}.subcta{background:#282828;color:white;border:1px solid #444;border-radius:8px;padding:12px 18px;margin-left:8px}.wrap{max-width:1200px;margin:auto;padding:10px 5% 55px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:25px 0 15px}.section-head h2{margin:0;font-size:22px}.hint{color:var(--muted);font-size:13px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}.chip{background:#191919;color:#ccc;border:1px solid #333;border-radius:20px;padding:8px 14px}.chip.active{background:#3b2e13;color:var(--gold);border-color:#806323}.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.tile{background:var(--panel);border:1px solid #292929;border-radius:12px;overflow:hidden;min-width:0}.poster{height:190px;background:linear-gradient(145deg,#41331a,#171717 60%,#272727);display:flex;align-items:center;justify-content:center;color:#d8b75e;font-size:38px;position:relative}.poster small{position:absolute;bottom:10px;left:10px;font-size:10px;letter-spacing:1px;color:#ddd;background:#0009;padding:5px 7px;border-radius:4px}.tile-body{padding:12px}.tile h3{font-size:15px;margin:0 0 6px}.tile p{font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.4}.tile-actions{display:flex;justify-content:space-between;align-items:center;gap:6px}.save{border:1px solid #51421e;background:#211b10;color:var(--gold);border-radius:7px;padding:7px 9px}.details{color:#bbb;background:transparent;border:0;font-size:12px}.empty{padding:32px;text-align:center;color:#aaa;background:#151515;border:1px dashed #444;border-radius:12px}.notice{margin-top:28px;padding:15px;border:1px solid #4b3c1c;background:#19150d;color:#cfc3a4;border-radius:10px;font-size:13px;line-height:1.6}.footer{border-top:1px solid #292929;color:#888;text-align:center;padding:25px 5%;font-size:12px}.hidden{display:none!important}.business-model{margin:30px 0 18px;padding:20px;border:1px solid #51421e;border-radius:14px;background:linear-gradient(120deg,#1d180e,#121212)}.business-model h2{margin:0 0 8px}.business-model>p{color:#c8c0ae;line-height:1.5;font-size:14px}.model-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}.model-card{background:#171717;border:1px solid #383020;border-radius:10px;padding:15px}.model-card strong{display:block;color:var(--gold);margin-bottom:7px}.model-card span{display:block;color:#bbb;font-size:13px;line-height:1.5}.model-status{display:inline-block;margin-top:14px;border:1px solid #66501f;border-radius:20px;padding:6px 10px;color:#e8c96f;font-size:11px;letter-spacing:.5px}@media(max-width:650px){.model-grid{grid-template-columns:1fr}.business-model{padding:16px}}@media(max-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{margin:18px 4%;}}@media(max-width:560px){.top{gap:10px;padding:12px 4%}.brand{width:100%}.nav{order:3;flex-basis:100%;overflow:auto;flex-wrap:nowrap}.nav button{white-space:nowrap}.tools{margin-left:auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.poster{height:155px}.hero{min-height:250px;padding:30px 6%}.hero h1{font-size:36px}.section-head h2{font-size:19px}}
+:root{--bg:#090909;--panel:#151515;--gold:#e8b93f;--muted:#aaa;--white:#f7f5ef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer}.top{position:sticky;top:0;z-index:5;background:#090909ed;backdrop-filter:blur(12px);border-bottom:1px solid #292929;padding:15px max(5%,calc((100% - 1200px)/2));display:flex;align-items:center;gap:22px;flex-wrap:wrap}.brand{font-size:22px;font-weight:900;letter-spacing:1px;color:var(--gold);white-space:nowrap}.brand span{color:#fff}.nav{display:flex;gap:8px;flex:1;flex-wrap:wrap}.nav button,.nav a,.lang{background:transparent;color:#ddd;border:0;padding:9px 12px;border-radius:8px;text-decoration:none;font:inherit}.nav button.active,.nav button:hover,.lang:hover,.nav a:hover{background:#292929;color:var(--gold)}.tools{display:flex;gap:8px;align-items:center}.search{width:min(220px,48vw);background:#1b1b1b;border:1px solid #333;border-radius:20px;color:white;padding:10px 14px}.hero{max-width:1200px;margin:28px auto 18px;padding:55px 5%;border:1px solid #3c321c;border-radius:20px;background:radial-gradient(ellipse at 85% 15%,#58451b 0,transparent 36%),linear-gradient(110deg,#211b10,#101010 65%);min-height:280px;display:flex;align-items:center}.hero h1{font-size:clamp(32px,6vw,58px);line-height:1.02;margin:0 0 14px;max-width:650px}.gold{color:var(--gold)}.hero p{color:#c9c2b3;max-width:570px;line-height:1.6}.cta,.subcta{border-radius:8px;padding:12px 18px;font-weight:800}.cta{background:var(--gold);color:#17130a;border:0}.subcta{background:#282828;color:white;border:1px solid #444;margin-left:8px}.wrap{max-width:1200px;margin:auto;padding:10px 5% 55px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:25px 0 15px}.section-head h2{margin:0;font-size:22px}.hint{color:var(--muted);font-size:13px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}.chip{background:#191919;color:#ccc;border:1px solid #333;border-radius:20px;padding:8px 14px}.chip.active{background:#3b2e13;color:var(--gold);border-color:#806323}.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.tile{background:var(--panel);border:1px solid #292929;border-radius:12px;overflow:hidden;min-width:0}.poster{height:190px;background:linear-gradient(145deg,#41331a,#171717 60%,#272727);display:flex;align-items:center;justify-content:center;color:#d8b75e;font-size:38px;position:relative}.poster small{position:absolute;bottom:10px;left:10px;font-size:10px;letter-spacing:1px;color:#ddd;background:#0009;padding:5px 7px;border-radius:4px}.tile-body{padding:12px}.tile h3{font-size:15px;margin:0 0 6px}.tile p{font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.4}.tile-actions{display:flex;justify-content:flex-end;align-items:center;gap:6px}.save{border:1px solid #51421e;background:#211b10;color:var(--gold);border-radius:7px;padding:7px 9px}.details{color:#bbb;background:transparent;border:0;font-size:12px}.empty{padding:32px;text-align:center;color:#aaa;background:#151515;border:1px dashed #444;border-radius:12px}.notice{margin-top:20px;padding:15px;border:1px solid #4b3c1c;background:#19150d;color:#cfc3a4;border-radius:10px;font-size:13px;line-height:1.6}.footer{border-top:1px solid #292929;color:#888;text-align:center;padding:25px 5%;font-size:12px}.hidden{display:none!important}.business-model{margin:30px 0 18px;padding:20px;border:1px solid #51421e;border-radius:14px;background:linear-gradient(120deg,#1d180e,#121212)}.business-model h2{margin:0 0 8px}.business-model>p{color:#c8c0ae;line-height:1.5;font-size:14px}.model-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}.model-card{background:#171717;border:1px solid #383020;border-radius:10px;padding:15px}.model-card strong{display:block;color:var(--gold);margin-bottom:7px}.model-card span{display:block;color:#bbb;font-size:13px;line-height:1.5}.status-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.status{border:1px solid #66501f;border-radius:20px;padding:7px 10px;color:#e8c96f;font-size:11px;letter-spacing:.3px}.status.inactive{border-color:#694444;color:#f0aaaa}@media(max-width:650px){.model-grid{grid-template-columns:1fr}.business-model{padding:16px}}@media(max-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{margin:18px 4%}}@media(max-width:560px){.top{gap:10px;padding:12px 4%}.brand{width:100%}.nav{order:3;flex-basis:100%;overflow:auto;flex-wrap:nowrap}.nav button,.nav a{white-space:nowrap}.tools{margin-left:auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.poster{height:155px}.hero{min-height:250px;padding:30px 6%}.hero h1{font-size:36px}.section-head h2{font-size:19px}}
 </style>
 </head>
 <body>
 <header class="top">
  <div class="brand">GFAMOUS <span>ENTERTAINMENT</span></div>
  <nav class="nav" aria-label="Main navigation">
-  <button class="active" data-page="home">Home</button><button data-page="movies">Movies</button><button data-page="series">TV Series</button><button data-page="music">Music</button><button data-page="mylist">My List</button><a class="dashboard-link" href="https://gfamous-entertainment-api.onrender.com/admin">Dashboard</a>
+  <button class="active" data-page="home" data-i18n="home">Home</button>
+  <button data-page="movies" data-i18n="movies">Movies</button>
+  <button data-page="series" data-i18n="series">TV Series</button>
+  <button data-page="music" data-i18n="music">Music</button>
+  <button data-page="mylist" data-i18n="mylist">My List</button>
+  <a href="https://gfamous-entertainment-api.onrender.com/admin" data-i18n="dashboard">Dashboard</a>
  </nav>
- <div class="tools"><input id="search" class="search" placeholder="Search titles..." aria-label="Search titles"><button class="lang" id="language">SW</button></div>
+ <div class="tools"><input id="search" class="search" placeholder="Search titles..." aria-label="Search titles"><button class="lang" id="language" type="button">SW</button></div>
 </header>
 <section class="hero" id="hero">
- <div><div class="gold" style="font-weight:800;letter-spacing:3px;font-size:12px">DISCOVER • WATCH • LISTEN</div><h1>Your world of <span class="gold">entertainment.</span></h1><p>Explore movies, TV series and music in one place. Find something new, build your personal list and enjoy entertainment discovery.</p><button class="cta" id="explore">Explore titles</button><button class="subcta" id="mylistHero">My List</button></div>
+ <div>
+  <div class="gold" style="font-weight:800;letter-spacing:3px;font-size:12px" data-i18n="eyebrow">DISCOVER • WATCH • LISTEN</div>
+  <h1 data-i18n="heroTitle">Your world of <span class="gold">entertainment.</span></h1>
+  <p data-i18n="heroText">Explore movies, TV series and music in one place. Find something new, build your personal list and enjoy entertainment discovery.</p>
+  <button class="cta" id="explore" data-i18n="exploreButton">Explore titles</button>
+  <button class="subcta" id="mylistHero" data-i18n="mylist">My List</button>
+ </div>
 </section>
 <main class="wrap">
  <div class="section-head"><h2 id="sectionTitle">Explore GFAMOUS</h2><span class="hint" id="count"></span></div>
- <div class="chips" id="filters"><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="movie">Movies</button><button class="chip" data-filter="series">TV Series</button><button class="chip" data-filter="music">Music</button></div>
- <div class="grid" id="catalogue"></div>
+ <div class="chips" id="filters">
+  <button class="chip active" data-filter="all" data-i18n="all">All</button>
+  <button class="chip" data-filter="movie" data-i18n="movies">Movies</button>
+  <button class="chip" data-filter="series" data-i18n="series">TV Series</button>
+  <button class="chip" data-filter="music" data-i18n="music">Music</button>
+ </div>
+ <div class="grid" id="catalogue" aria-live="polite"></div>
  <section class="business-model" aria-labelledby="businessTitle">
   <h2 id="businessTitle">Free to use. No advertisements.</h2>
-  <p id="businessIntro">GFAMOUS will remain free to join and browse. Revenue will come from optional premium content and creator partnerships — not adverts or mandatory subscriptions.</p>
+  <p id="businessIntro"></p>
   <div class="model-grid">
-   <article class="model-card"><strong id="freeTitle">FREE CONTENT</strong><span id="freeText">Selected movies, music and shows can be offered at no charge.</span></article>
-   <article class="model-card"><strong id="premiumTitle">PREMIUM DOWNLOADS</strong><span id="premiumText">Creators may set a price for authorized content. Pi and TSh payment options will be added only after secure payment verification is ready.</span></article>
-   <article class="model-card"><strong id="creatorTitle">CREATOR EARNINGS</strong><span id="creatorText">Artists and producers can earn from their content. GFAMOUS may retain an agreed commission from completed sales.</span></article>
+   <article class="model-card"><strong id="freeTitle"></strong><span id="freeText"></span></article>
+   <article class="model-card"><strong id="premiumTitle"></strong><span id="premiumText"></span></article>
+   <article class="model-card"><strong id="creatorTitle"></strong><span id="creatorText"></span></article>
   </div>
-  <span class="model-status" id="paymentStatus">PAYMENTS NOT YET ACTIVE · NO CHARGES</span>
+  <div class="status-list">
+   <span class="status inactive" id="paymentStatus">PAYMENTS NOT ACTIVE</span>
+   <span class="status inactive" id="streamingStatus">STREAMING NOT ACTIVE</span>
+   <span class="status inactive" id="downloadStatus">DOWNLOADS NOT ACTIVE</span>
+  </div>
  </section>
- <div class="notice"><strong class="gold">Content and rights:</strong> This is still a demonstration catalogue. No real downloads or purchases are enabled. Only content owned by GFAMOUS or supplied with distribution permission may be published or sold.</div>
+ <div class="notice"><strong class="gold" id="rightsTitle">Content and rights:</strong> <span id="rightsText"></span></div>
 </main>
-<footer class="footer">© <span id="year"></span> GFAMOUS Entertainment · Built for discovery · Privacy-conscious prototype</footer>
+<footer class="footer">© <span id="year"></span> GFAMOUS Entertainment · <span id="footerText">Free to browse · No advertisements</span></footer>
 <script>
-let titles=[
+const demoTitles=[
  {id:"m1",type:"movie",name:"Golden Horizon",meta:"Adventure · Sample title",icon:"🎬",desc:"A demonstration movie listing for the GFAMOUS catalogue."},
  {id:"m2",type:"movie",name:"The Last Journey",meta:"Drama · Sample title",icon:"🎞️",desc:"A sample entry showing how movie descriptions can appear."},
  {id:"m3",type:"movie",name:"City Lights",meta:"Thriller · Sample title",icon:"🌃",desc:"A placeholder catalogue item. No video is available."},
@@ -49,42 +71,61 @@ let titles=[
  {id:"a2",type:"music",name:"Acoustic Moments",meta:"Music · Sample playlist",icon:"🎼",desc:"A placeholder for authorized music and artist information."},
  {id:"a3",type:"music",name:"Global Beats",meta:"Music · Sample playlist",icon:"🎵",desc:"A sample music collection for the GFAMOUS platform."}
 ];
-const demoTitles=titles;
+let titles=[...demoTitles],page="home",filter="all",lang="en",saved=[];
+try{const stored=JSON.parse(localStorage.getItem("gfamousSaved")||"[]");if(Array.isArray(stored))saved=stored.filter(x=>typeof x==="string")}catch(error){saved=[]}
+const words={
+ en:{home:"Home",movies:"Movies",series:"TV Series",music:"Music",mylist:"My List",dashboard:"Dashboard",explore:"Explore GFAMOUS",search:"Search titles...",all:"All",empty:"No titles found. Try another search or category.",save:"＋ My List",remove:"✓ Saved",count:"titles",demo:"DEMO CONTENT",approved:"APPROVED LISTING",details:"Details",detailMessage:"This listing is for discovery only. Streaming and downloads are not active.",heroText:"Explore movies, TV series and music in one place. Find something new, build your personal list and enjoy entertainment discovery.",rights:"This is a demonstration catalogue. No real streaming, downloads or purchases are enabled. Only content owned by GFAMOUS or supplied with documented distribution permission may be published.",businessIntro:"GFAMOUS is free to join and browse, with no advertisements. Optional creator services may be considered in the future; no paid service is active now.",freeTitle:"FREE BROWSING",freeText:"Explore the catalogue without an access fee or advertising.",premiumTitle:"PAID DOWNLOADS",premiumText:"Not available. No paid downloads or purchases can currently be made.",creatorTitle:"CREATOR EARNINGS",creatorText:"Creator payments and revenue sharing are not active.",payment:"PAYMENTS NOT ACTIVE · NO CHARGES",streaming:"STREAMING NOT ACTIVE",download:"DOWNLOADS NOT ACTIVE",footer:"Free to browse · No advertisements",rightsTitle:"Content and rights:",countOne:"title",countMany:"titles"},
+ sw:{home:"Nyumbani",movies:"Filamu",series:"Tamthilia",music:"Muziki",mylist:"Orodha Yangu",dashboard:"Dashibodi",explore:"Gundua GFAMOUS",search:"Tafuta majina...",all:"Zote",empty:"Hakuna kilichopatikana. Jaribu utafutaji au kundi jingine.",save:"＋ Orodha Yangu",remove:"✓ Imehifadhiwa",count:"vipengee",demo:"MAUDHUI YA MFANO",approved:"TANGAZO LILILOIDHINISHWA",details:"Maelezo",detailMessage:"Tangazo hili ni kwa ajili ya kutazama taarifa tu. Streaming na upakuaji bado havijawashwa.",heroText:"Gundua filamu, tamthilia na muziki sehemu moja. Tafuta kitu kipya na uhifadhi unachokipenda kwenye orodha yako.",rights:"Hii ni katalogi ya majaribio. Streaming, upakuaji na manunuzi halisi havijawashwa. Maudhui yanayochapishwa lazima yawe mali ya GFAMOUS au yawe na ruhusa ya usambazaji iliyoandikwa.",businessIntro:"GFAMOUS ni bure kujiunga na kuvinjari, bila matangazo. Huduma za hiari kwa watayarishaji zinaweza kuzingatiwa baadaye; kwa sasa hakuna huduma ya kulipia iliyowashwa.",freeTitle:"KUVINJARI BURE",freeText:"Gundua katalogi bila ada ya kuingia wala matangazo.",premiumTitle:"UPAKUAJI WA KULIPIA",premiumText:"Bado haupatikani. Upakuaji wa kulipia na manunuzi hayawezi kufanyika kwa sasa.",creatorTitle:"MAPATO YA WATAYARISHAJI",creatorText:"Malipo ya watayarishaji na mgawanyo wa mapato bado havijawashwa.",payment:"MALIPO HAYAJAWASHWA · HAKUNA MAKATO",streaming:"STREAMING HAJIJAWASHWA",download:"UPAKUAJI HAUJAWASHWA",footer:"Kuvinjari bure · Hakuna matangazo",rightsTitle:"Maudhui na haki:",countOne:"kipengee",countMany:"vipengee"}
+};
+const $=id=>document.getElementById(id);
 function escapeHtml(value){return String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]))}
+function applyLanguage(){
+ const w=words[lang];document.documentElement.lang=lang;
+ document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(w[key])el.textContent=w[key]});
+ $("search").placeholder=w.search;$("search").setAttribute("aria-label",w.search);
+ $("businessTitle").textContent=lang==="en"?"Free to use. No advertisements.":"Bure kutumia. Hakuna matangazo.";
+ $("businessIntro").textContent=w.businessIntro;
+ ["freeTitle","freeText","premiumTitle","premiumText","creatorTitle","creatorText","rightsTitle"].forEach(id=>$(id).textContent=w[id]);
+ $("rightsText").textContent=w.rights;$("paymentStatus").textContent=w.payment;$("streamingStatus").textContent=w.streaming;$("downloadStatus").textContent=w.download;$("footerText").textContent=w.footer;
+ $("language").textContent=lang==="en"?"SW":"EN";
+}
+function visible(){
+ let list=titles.filter(t=>(page==="home"||page==="mylist"||t.type===page)&&(filter==="all"||t.type===filter)&&(page!=="mylist"||saved.includes(t.id)));
+ const q=$("search").value.trim().toLocaleLowerCase();
+ return list.filter(t=>(t.name+" "+t.meta+" "+t.desc).toLocaleLowerCase().includes(q));
+}
+function render(){
+ const w=words[lang];$("sectionTitle").textContent=page==="home"?w.explore:w[page];
+ document.querySelectorAll(".nav [data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===page));
+ document.querySelectorAll(".chip").forEach(b=>b.classList.toggle("active",b.dataset.filter===filter));
+ $("filters").classList.toggle("hidden",page==="mylist");
+ const list=visible();$("count").textContent=list.length+" "+(list.length===1?w.countOne:w.countMany);
+ $("catalogue").innerHTML=list.length?list.map(t=>'<article class="tile"><div class="poster">'+escapeHtml(t.icon)+'<small>'+(t.approved?w.approved:w.demo)+'</small></div><div class="tile-body"><h3>'+escapeHtml(t.name)+'</h3><p>'+escapeHtml(t.meta)+'</p><div class="tile-actions"><button class="save" data-save="'+escapeHtml(t.id)+'">'+(saved.includes(t.id)?w.remove:w.save)+'</button><button class="details" data-detail="'+escapeHtml(t.id)+'">'+w.details+'</button></div></div></article>').join(""):'<div class="empty" style="grid-column:1/-1">'+w.empty+'</div>';
+}
 async function loadApprovedTitles(){
  try{
-  const response=await fetch("https://gfamous-entertainment-api.onrender.com/api/listings");
-  if(!response.ok) return;
+  const response=await fetch("https://gfamous-entertainment-api.onrender.com/api/listings",{headers:{Accept:"application/json"}});
+  if(!response.ok)return;
   const data=await response.json();
-  const approved=(Array.isArray(data.listings)?data.listings:[]).map(item=>({
-   id:"approved_"+String(item._id),
-   type:item.type,
-   name:item.title,
+  const approved=(Array.isArray(data.listings)?data.listings:[]).filter(item=>["movie","series","music"].includes(item.type)&&item.title).map(item=>({
+   id:"approved_"+String(item._id||item.id||item.title),type:item.type,name:item.title,
    meta:(item.type==="series"?"TV Series":item.type==="movie"?"Movie":"Music")+" · "+(item.creatorName||"Creator"),
-   icon:item.type==="movie"?"🎬":item.type==="series"?"📺":"🎵",
-   desc:item.description||"",
-   mediaUrl:item.mediaUrl||"",
-   approved:true
+   icon:item.type==="movie"?"🎬":item.type==="series"?"📺":"🎵",desc:item.description||"",approved:true
   }));
-  titles=[...approved,...demoTitles];
-  render();
- }catch(error){console.warn("Approved GFAMOUS content could not be loaded.",error)}
+  titles=[...approved,...demoTitles];render();
+ }catch(error){console.warn("Approved GFAMOUS catalogue could not be loaded.",error)}
 }
-let page="home",filter="all",lang="en",saved=JSON.parse(localStorage.getItem("gfamousSaved")||"[]");JSON.parse(localStorage.getItem("gfamousSaved")||"[]");
-const words={en:{home:"Home",movies:"Movies",series:"TV Series",music:"Music",mylist:"My List",explore:"Explore GFAMOUS",search:"Search titles...",all:"All",empty:"No titles found. Try another search or category.",saved:"Saved",save:"＋ My List",remove:"✓ Saved",notice:"Sample entries are demonstration placeholders."},sw:{home:"Nyumbani",movies:"Filamu",series:"Tamthilia",music:"Muziki",mylist:"Orodha Yangu",explore:"Gundua GFAMOUS",search:"Tafuta majina...",all:"Zote",empty:"Hakuna kilichopatikana. Jaribu utafutaji mwingine.",saved:"Zilizohifadhiwa",save:"＋ Orodha Yangu",remove:"✓ Imehifadhiwa",notice:"Vipengee ni mifano ya majaribio."}};
-const $=id=>document.getElementById(id);
-function visible(){let list=titles.filter(t=>(page==="home"||page==="mylist"||t.type===page)&&(filter==="all"||t.type===filter)&&(page!=="mylist"||saved.includes(t.id)));let q=$("search").value.trim().toLowerCase();return list.filter(t=>(t.name+" "+t.meta+" "+t.desc).toLowerCase().includes(q))}
-function render(){let w=words[lang];$("sectionTitle").textContent=page==="home"?w.explore:w[page];$("search").placeholder=w.search;
-$("businessTitle").textContent=lang==="en"?"Free to use. No advertisements.":"Bure kutumia. Hakuna matangazo.";
-$("businessIntro").textContent=lang==="en"?"GFAMOUS will remain free to join and browse. Revenue will come from optional premium content and creator partnerships — not adverts or mandatory subscriptions.":"GFAMOUS itakuwa bure kujiunga na kutumia. Kipato kitatokana na maudhui maalumu ya kulipia na ushirikiano na watayarishaji — si matangazo wala usajili wa lazima.";
-$("freeTitle").textContent=lang==="en"?"FREE CONTENT":"MAUDHUI YA BURE";
-$("freeText").textContent=lang==="en"?"Selected movies, music and shows can be offered at no charge.":"Baadhi ya filamu, muziki na vipindi vitapatikana bure.";
-$("premiumTitle").textContent=lang==="en"?"PREMIUM DOWNLOADS":"UPAKUAJI WA KULIPIA";
-$("premiumText").textContent=lang==="en"?"Creators may set a price for authorized content. Pi and TSh payment options will be added only after secure payment verification is ready.":"Watayarishaji wataweka bei kwa maudhui wanayoruhusiwa kusambaza. Malipo ya Pi na TSh yataongezwa baada ya uthibitishaji salama kukamilika.";
-$("creatorTitle").textContent=lang==="en"?"CREATOR EARNINGS":"MAPATO YA WATAYARISHAJI";
-$("creatorText").textContent=lang==="en"?"Artists and producers can earn from their content. GFAMOUS may retain an agreed commission from completed sales.":"Wasanii na watayarishaji wataweza kupata kipato kutokana na maudhui yao. GFAMOUS itapata kamisheni iliyokubaliwa kwenye mauzo yaliyokamilika.";
-$("paymentStatus").textContent=lang==="en"?"PAYMENTS NOT YET ACTIVE · NO CHARGES":"MALIPO BADO HAYAJAWASHWA · HAKUNA MAKATO";document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.page===page));document.querySelectorAll(".chip").forEach(b=>b.classList.toggle("active",b.dataset.filter===filter));$("filters").classList.toggle("hidden",page==="mylist");let list=visible();$("count").textContent=list.length+" titles";$("catalogue").innerHTML=list.length?list.map(t=>'<article class="tile"><div class="poster">'+t.icon+'<small>'+(t.approved?'GFAMOUS APPROVED':'DEMO CONTENT')+'</small></div><div class="tile-body"><h3>'+escapeHtml(t.name)+'</h3><p>'+escapeHtml(t.meta)+'</p><div class="tile-actions"><button class="save" data-save="'+escapeHtml(t.id)+'">'+(saved.includes(t.id)?w.remove:w.save)+'</button><button class="details" data-detail="'+escapeHtml(t.id)+'">'+(t.approved&&t.mediaUrl?'Open media ↗':'Details ↗')+'</button></div></div></article>').join(''):'<div class="empty" style="grid-column:1/-1">'+w.empty+'</div>'}
-document.addEventListener("click",e=>{let p=e.target.closest("[data-page]");if(p){page=p.dataset.page;filter="all";render()}let f=e.target.closest("[data-filter]");if(f){filter=f.dataset.filter;render()}let s=e.target.closest("[data-save]");if(s){let id=s.dataset.save;saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];localStorage.setItem("gfamousSaved",JSON.stringify(saved));render()}let d=e.target.closest("[data-detail]");if(d){let t=titles.find(x=>x.id===d.dataset.detail);if(t&&t.approved&&t.mediaUrl){window.open(t.mediaUrl,"_blank","noopener,noreferrer")}else if(t){alert(t.name+"\\n"+t.desc+"\\n\\nDemo listing only — playback is not connected.")}}});
-$("search").addEventListener("input",render);$("language").onclick=()=>{lang=lang==="en"?"sw":"en";$("language").textContent=lang==="en"?"SW":"EN";render()};$("explore").onclick=()=>{page="home";document.querySelector(".wrap").scrollIntoView({behavior:"smooth"});render()};$("mylistHero").onclick=()=>{page="mylist";render();document.querySelector(".wrap").scrollIntoView({behavior:"smooth"})};$("year").textContent=new Date().getFullYear();render();loadApprovedTitles();
+document.addEventListener("click",e=>{
+ const p=e.target.closest("[data-page]");if(p){page=p.dataset.page;filter="all";render();return}
+ const f=e.target.closest("[data-filter]");if(f){filter=f.dataset.filter;render();return}
+ const s=e.target.closest("[data-save]");if(s){const id=s.dataset.save;saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];try{localStorage.setItem("gfamousSaved",JSON.stringify(saved))}catch(error){console.warn("Could not save My List on this browser.",error)}render();return}
+ const d=e.target.closest("[data-detail]");if(d){const t=titles.find(x=>x.id===d.dataset.detail);if(t)alert(t.name+"\n"+t.desc+"\n\n"+words[lang].detailMessage)}
+});
+$("search").addEventListener("input",render);
+$("language").addEventListener("click",()=>{lang=lang==="en"?"sw":"en";applyLanguage();render()});
+$("explore").addEventListener("click",()=>{page="home";filter="all";render();document.querySelector(".wrap").scrollIntoView({behavior:"smooth"})});
+$("mylistHero").addEventListener("click",()=>{page="mylist";filter="all";render();document.querySelector(".wrap").scrollIntoView({behavior:"smooth"})});
+$("year").textContent=new Date().getFullYear();applyLanguage();render();loadApprovedTitles();
 </script>
-</body></html>
+</body>
+</html>
