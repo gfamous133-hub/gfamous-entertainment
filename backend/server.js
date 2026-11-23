@@ -118,6 +118,9 @@ app.get("/validation-key.txt", (_req, res) => {
   res.type("text/plain").send("89230434dd31bc1d7171b454f86478c133a34a14f35e7d204c5674f6a2fb46b2026d67224e3ac58ab2fb69a94ab65ee9e0db844a1dda1d800fc3b011ae34409d");
 });
 
+app.get("/privacy-policy", (_req, res) => res.sendFile(path.join(__dirname, "public", "privacy-policy.html")));
+app.get("/terms-of-service", (_req, res) => res.sendFile(path.join(__dirname, "public", "terms-of-service.html")));
+
 app.get("/", (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
 app.get("/creator", (_req, res) => res.sendFile(path.join(__dirname, "public", "creator.html")));
 app.get("/admin", (_req, res) => res.sendFile(path.join(__dirname, "public", "admin.html")));
