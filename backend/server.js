@@ -114,7 +114,7 @@ app.use(express.static(path.join(__dirname, "public"), {
   maxAge: isProduction ? "1h" : 0
 }));
 
-app.get("/", (_req, res) => res.redirect("/creator"));
+app.get("/", (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
 app.get("/creator", (_req, res) => res.sendFile(path.join(__dirname, "public", "creator.html")));
 app.get("/admin", (_req, res) => res.sendFile(path.join(__dirname, "public", "admin.html")));
 
